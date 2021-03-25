@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 
 });
-//Route::resource('user','App\Http\Controllers\ManagementUserController');
-Route::get('user', [ManagementUserController::class, 'index']);
+Route::resource('user','App\Http\Controllers\ManagementUserController');
+//Route::get('user', [ManagementUserController::class, 'index']);
 //Route::get('user','App\Http\Controllers\ManagementUserController@index');
